@@ -1,0 +1,22 @@
+body{
+    width:480px;
+    height: 1248px;
+
+}
+div{
+    text-align: center;
+}
+span{
+    font-size: 40px;
+    font-emphasize-style: Times;
+}
+#column1{
+    margin-top: 200px;
+}
+#column2{
+    margin-top: 300px;
+}
+
+#inputValue{
+    font-size: 20px;
+}

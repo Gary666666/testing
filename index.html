@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+    <title>   </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<input type="number" value="" id="inputValue"/>
+<button id="buttonTry" type="button" onclick="myFunction()">Try it</button>
+<input id="printpagebutton" type="button" value="print" onclick="printpage()"/>
+<div id="column1">
+    <span>RX</span> <span id="hello1">----</span><span>99 --</span> <span id="hello2">----</span><span>00</span>
+</div>
+
+<div id="column2">
+    <span>RX</span> <span id="hello3">----</span><span>99 --</span> <span id="hello4">----</span><span>00</span>
+</div>
+<script>
+    function myFunction() {
+        var temp = document.getElementById("inputValue").value;
+        var number = parseInt(temp);
+        document.getElementById("hello1").innerHTML = number;
+        document.getElementById("hello2").innerHTML = number;
+        document.getElementById("hello3").innerHTML = number;
+        document.getElementById("hello4").innerHTML = number;
+    }
+    function printpage() {
+        var printButton= document.getElementById("printpagebutton");
+        var inputBar = document.getElementById("inputValue");
+        var buttonTry =document.getElementById("buttonTry");
+        inputBar.style.visibility ='hidden'
+        printButton.style.visibility = 'hidden';
+        buttonTry.style.visibility='hidden';
+        window.print()
+        printButton.style.visibility = 'visible';
+        inputBar.style.visibility = 'visible';
+        buttonTry.style.visibility='visible';
+    }
+</script>
+</body>
+</html>
